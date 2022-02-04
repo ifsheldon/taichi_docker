@@ -40,4 +40,5 @@ RUN /bin/bash -c "cd /root && \
     python -m pip install taichi && \
     python -m pip install --user -r requirements_dev.txt"
 
+ENV TAICHI_CMAKE_ARGS="-DTI_WITH_VULKAN:BOOL=ON -DTI_WITH_CUDA:BOOL=ON -DTI_WITH_OPENGL:BOOL=ON"
 # RUN apt install vim
